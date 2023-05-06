@@ -1,7 +1,11 @@
+<!--Algunas clases usadas son de bootstrap, por lo que ya tienen sus propiedades y
+no estan declaradas en component.css-->
 <div class="jumbotron text-center">
-  <button class="btn btn-success btn-lg">Tirar Dados</button>
+  <!--cuando se haga clic se manda a llamar al metodo tirarDados-->
+  <button class="btn btn-success btn-lg" (click)="tirarDados()">Tirar Dados</button>
   <br>
   <!--clase img para manipular los dados-->
-  <img class="img" src="../assets/img/dice1.png">
-  <img class="img" src="../assets/img/dice2.png">
+  <!--src entre corchetes para jalar las ruta almacenadas en las variables del ts-->
+  <img class="img" [src]="dadoIzquierda">
+  <img class="img" [src]="dadoDerecha">
 </div>
