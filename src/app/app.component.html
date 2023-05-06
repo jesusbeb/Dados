@@ -8,4 +8,6 @@ no estan declaradas en component.css-->
   <!--src entre corchetes para jalar las ruta almacenadas en las variables del ts-->
   <img class="img" [src]="dadoIzquierda">
   <img class="img" [src]="dadoDerecha">
+  <!--Si el ngIf se cumple, se muestra el h1-->
+  <h1 *ngIf="numero1===numero2"> <span > GANASTE </span> </h1>
 </div>
